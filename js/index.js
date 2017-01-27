@@ -1,20 +1,14 @@
 $(function() {
 //  window.alert('test');
 
-  animate_paragraphe($(".paragraphe:first"));
+  animate_paragraphe();
 });
 
 var position = 0;
 
-function animate_paragraphe(e)
+function animate_paragraphe()
 {
-  console.log(e);
-  e.children().each(function(i, p)
-    {
-//      console.log("index ; " + i);
-//      console.log("Paragraphe : " + p);
-    }
-  );
+  $('.paragraphe').eq(0).addClass('displayed');
 
   setInterval(function() {
     if(position == 2)
@@ -26,6 +20,7 @@ function animate_paragraphe(e)
       position += 1;
     }
 
-    $("#carousel").css('margin-left', (-1000*position) +'px')
+    $('.paragraphe').eq(position).addClass('displayed');
+    $("#carousel").css('margin-left', (-1000*position) +'px');
   }, 8000)
 }
