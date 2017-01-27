@@ -5,11 +5,17 @@ BODY
 	font-family: 'Arial', sans-serif;
 }
 
+SECTION.carousel
+{
+	width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
 #carousel
 {
 	border: 1px solid red;
 	width: 20000px;
-	overflow: hidden;
 	position: relative;
 	-webkit-transition: margin-left 1s;
 

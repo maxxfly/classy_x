@@ -17,7 +17,15 @@ function animate_paragraphe(e)
   );
 
   setInterval(function() {
-    position += 1;
+    if(position == 2)
+    {
+      position = 0;
+    }
+    else
+    {
+      position += 1;
+    }
+
     $("#carousel").css('margin-left', (-1000*position) +'px')
   }, 8000)
 }
