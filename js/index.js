@@ -1,26 +1,30 @@
-$(function() {
-//  window.alert('test');
+var setIntervalCarousel;
+var position_paragraphe = 0;
 
+$(function() {
   animate_paragraphe();
+  animate_carousel();
+
+  $('.ia-container').bind('click touch', function() {
+    clearInterval(setIntervalCarousel);
+  });
 });
 
-var position = 0;
+
+function animate_carousel()
+{
+  setIntervalCarousel = setInterval(function() {
+    $('.ia-container INPUT:checked ~ FIGURE > INPUT').prop( "checked", true );
+  }, 8000);
+}
 
 function animate_paragraphe()
 {
   $('.paragraphe').eq(0).addClass('displayed');
 
   setInterval(function() {
-    if(position == 2)
-    {
-      position = 0;
-    }
-    else
-    {
-      position += 1;
-    }
-
-    $('.paragraphe').eq(position).addClass('displayed');
-    $("#carousel").css('margin-left', (-1000*position) +'px');
-  }, 8000)
+    position_paragraphe = (position_paragraphe == 2) ? 0 : position_paragraphe += 1;
+    $('.paragraphe').eq(position_paragraphe).addClass('displayed');
+    $("#carousel").css('margin-left', (-1000*position_paragraphe) +'px');
+  }, 8000);
 }
