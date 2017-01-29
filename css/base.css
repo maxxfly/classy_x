@@ -5,9 +5,26 @@ BODY
 	font-family: 'Arial', sans-serif;
 }
 
+HEADER
+{
+}
+
+HEADER IMG
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+
+.container{
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+}
+
 SECTION.carousel
 {
-	width: 1000px;
+	width: 800px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -25,7 +42,7 @@ SECTION.carousel
 {
 	margin: 0;
  	/*border: 1px dotted blue;*/
-	width: 1000px;
+	width: 800px;
 	display: inline-block;
 }
 
@@ -56,10 +73,7 @@ SECTION.carousel
 	opacity: 1
 }
 
-.container{
-	width: 100%;
-	position: relative;
-}
+
 .clr{
 	clear: both;
 	padding: 0;

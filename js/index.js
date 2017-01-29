@@ -25,6 +25,8 @@ function animate_paragraphe()
   setInterval(function() {
     position_paragraphe = (position_paragraphe == 2) ? 0 : position_paragraphe += 1;
     $('.paragraphe').eq(position_paragraphe).addClass('displayed');
-    $("#carousel").css('margin-left', (-1000*position_paragraphe) +'px');
+
+    // TODO: se baser sur la largeur du block et non une valeur fixée
+    $("#carousel").css('margin-left', (-800*position_paragraphe) +'px');
   }, 8000);
 }
