@@ -44,6 +44,7 @@ SECTION.carousel
  	/*border: 1px dotted blue;*/
 	width: 800px;
 	display: inline-block;
+	position: relative;
 }
 
 #carousel .paragraphe P
@@ -73,6 +74,29 @@ SECTION.carousel
 	opacity: 1
 }
 
+#carousel A
+{
+	display: none;
+	color: #ccc;
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	margin: 0 20px;
+	text-decoration: none;
+}
+
+#carousel A:hover
+{
+	text-decoration: underline;
+}
+
+
+.menu
+{ width: 50px;
+	display: inline-block;
+	margin: 5px 20px;
+	vertical-align: top;
+}
 
 .clr{
 	clear: both;

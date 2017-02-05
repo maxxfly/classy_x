@@ -1,4 +1,5 @@
 var setIntervalCarousel;
+var setIntervalParagraphe;
 var position_paragraphe = 0;
 
 $(function() {
@@ -22,11 +23,36 @@ function animate_paragraphe()
 {
   $('.paragraphe').eq(0).addClass('displayed');
 
-  setInterval(function() {
-    position_paragraphe = (position_paragraphe == 2) ? 0 : position_paragraphe += 1;
+  setIntervalParagraphe = setInterval(function() {
+    change_paragraphe();
+  }, 8000);
+}
+
+function replay()
+{
+  $('.paragraphe A').hide();
+  position_paragraphe = 0;
+  $("#carousel").css('margin-left', '0px');
+
+  clearInterval(setIntervalParagraphe);
+
+  setIntervalParagraphe = setInterval(function() {
+    change_paragraphe();
+  }, 8000);
+}
+
+function change_paragraphe()
+{
+  if(position_paragraphe == 2)
+  {
+    $('.paragraphe A').show();
+  }
+  else
+  {
+    position_paragraphe = position_paragraphe += 1;
     $('.paragraphe').eq(position_paragraphe).addClass('displayed');
 
     // TODO: se baser sur la largeur du block et non une valeur fixée
     $("#carousel").css('margin-left', (-800*position_paragraphe) +'px');
-  }, 8000);
+  }
 }
