@@ -51,8 +51,6 @@ function change_paragraphe()
   {
     position_paragraphe = position_paragraphe += 1;
     $('.paragraphe').eq(position_paragraphe).addClass('displayed');
-
-    // TODO: se baser sur la largeur du block et non une valeur fixée
-    $("#carousel").css('margin-left', (-800*position_paragraphe) +'px');
+    $("#carousel").css('margin-left', (-1 * ($('.paragraphe').width()) *position_paragraphe) +'px');
   }
 }

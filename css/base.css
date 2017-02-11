@@ -15,7 +15,6 @@ HEADER IMG
 {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 30px;
 }
 
 .container{
@@ -43,7 +42,6 @@ SECTION.carousel
 #carousel .paragraphe
 {
 	margin: 0;
- 	/*border: 1px dotted blue;*/
 	width: 800px;
 	display: inline-block;
 	position: relative;
@@ -112,4 +110,16 @@ SECTION.carousel
 .no-csstransforms3d .support-note span.no-csstransforms3d,
 .no-csstransitions .support-note span.no-csstransitions{
 	display: block;
+}
+
+@media screen and (min-width: 1100px) {
+	HEADER IMG { margin-right: 30px; }
+}
+
+@media screen and (max-width: 1100px) {
+	HEADER { width: 780px; }
+	HEADER IMG { margin-right: 0px; }
+	SECTION.carousel { width: 500px; }
+	#carousel .paragraphe	{	width: 500px;	}
+	#carousel .paragraphe P	{ font-size: 20px; }
 }
