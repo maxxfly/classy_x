@@ -98,6 +98,19 @@ SECTION.carousel
 	vertical-align: top;
 }
 
+.menu A {
+	color: #000;
+}
+.menu A:hover {
+	color: #555;
+}
+
+.menu A:hover .fa-inverse{
+	color: #DDD;
+	filter:blur(2px);
+	-webkit-filter:blur(2px); 
+}
+
 .clr{
 	clear: both;
 	padding: 0;
