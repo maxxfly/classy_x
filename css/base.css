@@ -108,7 +108,7 @@ SECTION.carousel
 .menu A:hover .fa-inverse{
 	color: #DDD;
 	filter:blur(2px);
-	-webkit-filter:blur(2px); 
+	-webkit-filter:blur(2px);
 }
 
 .clr{
