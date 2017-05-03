@@ -25,7 +25,7 @@ HEADER IMG
 
 SECTION.carousel
 {
-	width: 800px;
+	width: 700px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -42,7 +42,7 @@ SECTION.carousel
 #carousel .paragraphe
 {
 	margin: 0;
-	width: 800px;
+	width: 700px;
 	display: inline-block;
 	position: relative;
 }
@@ -94,7 +94,7 @@ SECTION.carousel
 {
 	width: 30px;
 	display: inline-block;
-	margin: 5px 0 0 20px;
+	margin: 5px 0 0 15px;
 	vertical-align: top;
 }
 
@@ -126,13 +126,13 @@ SECTION.carousel
 }
 
 @media screen and (min-width: 1100px) {
-	HEADER IMG { margin-right: 30px; }
+	HEADER IMG { margin-right: 15px;  }
 }
 
 @media screen and (max-width: 1100px) {
-	HEADER { width: 780px; }
-	HEADER IMG { margin-right: 0px; }
-	SECTION.carousel { width: 500px; }
-	#carousel .paragraphe	{	width: 500px;	}
-	#carousel .paragraphe P	{ font-size: 20px; }
+	HEADER { width: 700px; }
+	HEADER IMG { margin-right: 0px; width: 150px !important; }
+	SECTION.carousel { width: 470px; }
+	#carousel .paragraphe	{	width: 470px;	}
+	#carousel .paragraphe P	{ font-size: 16px; }
 }
