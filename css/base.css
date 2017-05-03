@@ -17,6 +17,23 @@ HEADER IMG
 	vertical-align: middle;
 }
 
+#description
+{
+	width: 900px;
+	margin: 0 auto;
+	color: #ddd;
+	padding-bottom: 20px;
+}
+
+CITE
+{
+	font-size: 14px;
+	padding-left: 20px;
+	display: inline-block;
+	border-left: 1px solid #333;
+	margin-bottom: 20px;
+}
+
 .container{
 	vertical-align: middle;
 	display: inline-block;
@@ -135,4 +152,5 @@ SECTION.carousel
 	SECTION.carousel { width: 470px; }
 	#carousel .paragraphe	{	width: 470px;	}
 	#carousel .paragraphe P	{ font-size: 16px; }
+	#description { width: 100%; }
 }
