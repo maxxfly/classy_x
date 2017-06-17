@@ -7,6 +7,10 @@ $(function() {
   animate_carousel();
 
   $('.ia-container').bind('click touch', function() {
+
+    $('FIGURE').addClass('disabled');
+    $('.ia-container INPUT:checked').parent().removeClass('disabled');
+
     clearInterval(setIntervalCarousel);
   });
 });
@@ -15,6 +19,9 @@ $(function() {
 function animate_carousel()
 {
   setIntervalCarousel = setInterval(function() {
+    $('FIGURE').addClass('disabled');
+    $('.ia-container INPUT:checked ~ FIGURE').removeClass('disabled');
+
     $('.ia-container INPUT:checked ~ FIGURE > INPUT').prop( "checked", true );
   }, 8000);
 }
