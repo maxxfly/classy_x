@@ -7,11 +7,20 @@ $(function() {
   animate_carousel();
 
   $('.ia-container').bind('click touch', function() {
-
     $('FIGURE').addClass('disabled');
+    $('.fa-chevron-left').addClass('hidden');
+    $('.fa-chevron-right').addClass('hidden');
+
     $('.ia-container INPUT:checked').parent().removeClass('disabled');
 
+    $('.ia-container INPUT:checked').parent().siblings(".fa-chevron-left").removeClass('hidden');
+    $('.ia-container INPUT:checked').siblings("FIGURE").children(".fa-chevron-right").removeClass('hidden');
+
     clearInterval(setIntervalCarousel);
+  });
+
+  $('.navigation').bind('click touch', function() {
+    $(this).siblings("INPUT").trigger("click");
   });
 });
 
@@ -20,9 +29,16 @@ function animate_carousel()
 {
   setIntervalCarousel = setInterval(function() {
     $('FIGURE').addClass('disabled');
+    $('.fa-chevron-left').addClass('hidden');
+    $('.fa-chevron-right').addClass('hidden');
+
     $('.ia-container INPUT:checked ~ FIGURE').removeClass('disabled');
+    $('.ia-container INPUT:checked ~ .fa-chevron-left').removeClass('hidden');
 
     $('.ia-container INPUT:checked ~ FIGURE > INPUT').prop( "checked", true );
+
+    $('.ia-container INPUT:checked ~ FIGURE > .fa-chevron-right').removeClass('hidden');
+
   }, 8000);
 }
 
