@@ -1,5 +1,5 @@
 .ia-container {
-	width: 1050px;
+	width: 1150px;
 	margin: 20px auto;
 	overflow: hidden;
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.08);
@@ -9,7 +9,7 @@
 .ia-container figure {
     position: absolute;
 	top: 0;
-	left: 50px; /* width of visible piece */
+	left: 41px; /* width of visible piece */
 	width: 900px;
     box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
 	-webkit-transition: all 0.3s ease-in-out;
@@ -34,7 +34,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 50px; /* just cover visible part */
+	width: 41px; /* just cover visible part */
 	height: 100%;
 	cursor: pointer;
 	border: 0;
@@ -131,7 +131,7 @@
     z-index: 1;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1250px) {
     .ia-container {
 		width: 700px;
 	}
