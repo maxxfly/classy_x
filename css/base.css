@@ -136,8 +136,8 @@ IMG
 
 .ia-container FIGURE.disabled > IMG
 {
-	-webkit-filter: grayscale(100%) blur(2px); /* Safari */
-  filter: grayscale(100%) blur(2px);
+	-webkit-filter: grayscale(100%) blur(1px); /* Safari */
+  filter: grayscale(100%) blur(1px);
 }
 
 .center { text-align: center;}
