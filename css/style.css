@@ -133,20 +133,20 @@
 
 @media screen and (max-width: 1250px) {
     .ia-container {
-		width: 700px;
+		width: 750px;
 	}
 
 	.ia-container figure {
 		left: 40px;
-		width: 550px;
+		width: 470px;
 	}
 
 	.ia-container input {
-		width: 40px;
+		width: 30px;
 	}
 
 	.ia-container input:checked ~ figure {
-		left: 550px;
+		left: 470px;
 	}
 
 	.ia-container figcaption span {
@@ -154,7 +154,20 @@
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 750px) {
+
+	.ia-container figure { width: 100% !important; left: 0; }
+	.ia-container { width: 100%; }
+	.ia-container figure { position: inherit; display: inline-block: }
+	.ia-container { border: none; }
+	.ia-container IMG { width: 30%;  float: left; padding: 2px;  }
+	INPUT { display: none !important; }
+	I { display: none !important; }
+
+}
+
+/*
+@media screen and (max-width: 750px) {
     .ia-container {
 		width: 320px;
 	}
@@ -180,3 +193,4 @@
 	}
 
 }
+*/

@@ -25,9 +25,11 @@ HEADER IMG
 	padding-bottom: 20px;
 }
 
+P { font-size: 1em; }
+
 CITE
 {
-	font-size: 14px;
+	font-size: 0.8em;
 	padding-left: 20px;
 	display: inline-block;
 	border-left: 1px solid #333;
@@ -122,6 +124,23 @@ SECTION.carousel
 	display: none !important;
 }
 
+.button
+{
+	border-radius: 10px;
+	display: inline-block;
+	height: 20px;
+	background-color: #ccc;
+	color: black;
+	padding: 10px;
+	text-decoration: none;
+
+	background: rgb(245,246,246); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 IMG
 {
 	-webkit-filter: grayscale(0%); /* Safari */
@@ -132,6 +151,20 @@ IMG
   -o-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 1150px) {
+	HEADER IMG { margin-right: 15px;  }
+}
+
+@media screen and (max-width: 1150px) {
+	HEADER { width: 700px; }
+	HEADER IMG { margin-right: 0px; width: 150px !important; }
+	SECTION.carousel { width: 470px; }
+	#carousel .paragraphe	{	width: 470px;	}
+	#carousel .paragraphe P	{ font-size: 16px; }
+	#description { width: 100%; }
+	#img_description { max-width: 100% !important; margin 0 0; }
 }
 
 .ia-container FIGURE.disabled > IMG
@@ -197,7 +230,7 @@ IMG
 
 #popin A { text-decoration: none; font-weight: bold;}
 
-#popin .info_supp { display: inline-block; ve
+#popin .info_supp { display: inline-block; }
 
 .clr{
 	clear: both;
@@ -211,17 +244,4 @@ IMG
 .no-csstransforms3d .support-note span.no-csstransforms3d,
 .no-csstransitions .support-note span.no-csstransitions{
 	display: block;
-}
-
-@media screen and (min-width: 1150px) {
-	HEADER IMG { margin-right: 15px;  }
-}
-
-@media screen and (max-width: 1150px) {
-	HEADER { width: 700px; }
-	HEADER IMG { margin-right: 0px; width: 150px !important; }
-	SECTION.carousel { width: 470px; }
-	#carousel .paragraphe	{	width: 470px;	}
-	#carousel .paragraphe P	{ font-size: 16px; }
-	#description { width: 100%; }
 }

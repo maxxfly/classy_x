@@ -32,13 +32,14 @@ function animate_carousel()
     $('.fa-chevron-left').addClass('hidden');
     $('.fa-chevron-right').addClass('hidden');
 
-    $('.ia-container INPUT:checked ~ FIGURE').removeClass('disabled');
-    $('.ia-container INPUT:checked ~ .fa-chevron-left').removeClass('hidden');
+    if($('.ia-container INPUT:checked ~ FIGURE > INPUT').length > 0) {
+      $('.ia-container INPUT:checked ~ FIGURE').removeClass('disabled');
+      $('.ia-container INPUT:checked ~ .fa-chevron-left').removeClass('hidden');
 
-    $('.ia-container INPUT:checked ~ FIGURE > INPUT').prop( "checked", true );
+      $('.ia-container INPUT:checked ~ FIGURE > INPUT').prop( "checked", true );
 
-    $('.ia-container INPUT:checked ~ FIGURE > .fa-chevron-right').removeClass('hidden');
-
+      $('.ia-container INPUT:checked ~ FIGURE > .fa-chevron-right').removeClass('hidden');
+    }
   }, 8000);
 }
 
