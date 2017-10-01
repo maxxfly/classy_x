@@ -198,7 +198,7 @@ IMG
 
 .galery  { }
 
-.galery FIGURE { width: 250px; float: left; padding: 5px 5px 0 5px; background-color: white; cursor: pointer; cursor: hand; margin: 15px ; }
+.galery FIGURE { width: 250px; float: left; padding: 5px 5px 5px 5px; background-color: white; cursor: pointer; cursor: hand; margin: 15px ; }
 
 .galery FIGCAPTION { display: none; }
 .galery FIGURE DIV { display: none; }
