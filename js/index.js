@@ -6,7 +6,7 @@ $(function() {
   animate_paragraphe();
   animate_carousel();
 
-  $('.ia-container').bind('click touch', function() {
+  $('.ia-container').bind('screen.orientationclick touch', function() {
     $('FIGURE').addClass('disabled');
     $('.fa-chevron-left').addClass('hidden');
     $('.fa-chevron-right').addClass('hidden');
